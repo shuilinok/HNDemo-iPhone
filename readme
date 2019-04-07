@@ -1,0 +1,8 @@
+
+pod install时找不到pod命令：
+
+$sudo gem install cocoapods
+
+
+
+
