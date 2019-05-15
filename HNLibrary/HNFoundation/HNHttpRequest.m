@@ -7,16 +7,7 @@
 //
 
 #import "HNHttpRequest.h"
-#import "HNHttpRequestManager.h"
 
 @implementation HNHttpRequest
-
-- (void)send:(HNResultCallback)callback
-{
-    [[HNHttpRequestManager sharedInstance] sendRequest:self callback:^(NSError *error) {
-       
-        callback(error);
-    }];
-}
 
 @end

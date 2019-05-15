@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) NSString *key;
 
+@property (assign, nonatomic) NSUInteger offset;
+
 @property (assign, nonatomic) NSUInteger limit;
 
 @property (readonly, strong, nonatomic) NSMutableArray *courses;

@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "HNCallback.h"
-#import "NSError+HN.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -23,8 +22,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) NSDictionary *paramDict;
 
 @property (strong, nonatomic) id response;
-
-- (void)send:(HNResultCallback)callback;
 
 @end
 

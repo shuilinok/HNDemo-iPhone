@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HNCallback.h"
+#import "NSError+HN.h"
 #import "HNHttpRequest.h"
 
 NS_ASSUME_NONNULL_BEGIN

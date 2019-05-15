@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "HNKeyCourseListViewController.h"
+#import "Person.h"
 
 @interface ViewController ()
 
@@ -28,6 +29,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    Class cls = [Person class];
+    
+    void *obj = &cls;
+    
+    [(__bridge id)obj print];
 }
 
 
@@ -51,6 +58,7 @@
 {
     HNKeyCourseList *list = [[HNKeyCourseList alloc] init];
     list.key = key;
+    list.offset = 0;
     list.limit = 8;
     
     [self.view showLoading:YES];

@@ -7,11 +7,9 @@
 //
 
 #import "HNKeyCourseList.h"
-#import "HNDemoHttpRequest.h"
+#import "HNDemoServerImp.h"
 
 @interface HNKeyCourseList ()
-
-@property (assign, nonatomic) NSUInteger offset;
 
 @property (strong, nonatomic) NSMutableArray *courses;
 
@@ -33,42 +31,15 @@
     return self;
 }
 
-- (HNDemoHttpRequest *)createLoadRequest
-{
-    HNDemoHttpRequest *request = [HNDemoHttpRequest basicRequest];
-    request.url = kCourseSearchUrl;
-    request.method = @"GET";
-    
-    NSString *keyword = self.key ? : @"";
-    NSString *type = @"all";
-    NSString *limit = [NSString stringWithFormat:@"%lu",(unsigned long)self.limit];
-    NSString *offset = [NSString stringWithFormat:@"%lu",(unsigned long)self.offset];
-    NSString *courseId = @"";
-    
-    NSDictionary *paramDict = [NSDictionary dictionaryWithObjectsAndKeys:
-                               keyword, @"keyword",
-                               type, @"type",
-                               courseId, @"course_id",
-                               offset, @"offset",
-                               limit, @"limit",
-                               @"0,1",@"course_type",
-                               nil];
-    request.paramDict = paramDict;
-    
-    return request;
-}
-
 - (void)load:(HNResultCallback)callback
 {
     self.offset = 0;
     
-    HNDemoHttpRequest *request = [self createLoadRequest];
-    
-    [request send:^(NSError *error) {
+    [[HNDemoServerImp sharedImp] searchKeyCourses:self.key offset:self.offset limit:self.limit callback:^(id data, NSError *error) {
         
         if(error.code == noErr)
         {
-            [self setWithResponse:request.response];
+            [self setWithResponse:data];
             
             self.offset += self.limit;
         }
@@ -79,19 +50,18 @@
 
 - (void)loadMore:(HNResultCallback)callback
 {
-    HNDemoHttpRequest *request = [self createLoadRequest];
-    
-    [request send:^(NSError *error) {
+    [[HNDemoServerImp sharedImp] searchKeyCourses:self.key offset:self.offset limit:self.limit callback:^(id data, NSError *error) {
         
         if(error.code == noErr)
         {
-            [self appendWithResponse:request.response];
+            [self appendWithResponse:data];
             
             self.offset += self.limit;
         }
         
         callback(error);
     }];
+
 }
 
 //网络请求回来的数据更新到模型
