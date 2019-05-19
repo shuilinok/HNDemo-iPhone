@@ -11,6 +11,9 @@
 		4566D17B2288EF2800A6528C /* HNKeyList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566D17A2288EF2800A6528C /* HNKeyList.m */; };
 		4566D181228C384800A6528C /* HNDemoServerImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566D180228C384800A6528C /* HNDemoServerImp.m */; };
 		4566D184228C394200A6528C /* HNDemoLocalImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566D183228C394200A6528C /* HNDemoLocalImp.m */; };
+		4566D18B228CEED800A6528C /* HNDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4566D189228CEED800A6528C /* HNDemo.xcdatamodeld */; };
+		4566D190228CEFBF00A6528C /* SearchKeyEntity+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566D18C228CEFBE00A6528C /* SearchKeyEntity+CoreDataClass.m */; };
+		4566D191228CEFBF00A6528C /* SearchKeyEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566D18D228CEFBE00A6528C /* SearchKeyEntity+CoreDataProperties.m */; };
 		45C5CFD62244BAD8003F8CD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C5CFD52244BAD8003F8CD2 /* AppDelegate.m */; };
 		45C5CFDC2244BAD8003F8CD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C5CFDA2244BAD8003F8CD2 /* Main.storyboard */; };
 		45C5CFDE2244BAD8003F8CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C5CFDD2244BAD8003F8CD2 /* Assets.xcassets */; };
@@ -62,6 +65,11 @@
 		4566D180228C384800A6528C /* HNDemoServerImp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNDemoServerImp.m; sourceTree = "<group>"; };
 		4566D182228C394200A6528C /* HNDemoLocalImp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNDemoLocalImp.h; sourceTree = "<group>"; };
 		4566D183228C394200A6528C /* HNDemoLocalImp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNDemoLocalImp.m; sourceTree = "<group>"; };
+		4566D18A228CEED800A6528C /* HNDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HNDemo.xcdatamodel; sourceTree = "<group>"; };
+		4566D18C228CEFBE00A6528C /* SearchKeyEntity+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SearchKeyEntity+CoreDataClass.m"; sourceTree = "<group>"; };
+		4566D18D228CEFBE00A6528C /* SearchKeyEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SearchKeyEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		4566D18E228CEFBE00A6528C /* SearchKeyEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SearchKeyEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		4566D18F228CEFBF00A6528C /* SearchKeyEntity+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SearchKeyEntity+CoreDataClass.h"; sourceTree = "<group>"; };
 		45C5CFD12244BAD8003F8CD2 /* HNDemo-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HNDemo-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C5CFD42244BAD8003F8CD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		45C5CFD52244BAD8003F8CD2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -139,6 +147,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4566D188228CEED800A6528C /* HNEntity */ = {
+			isa = PBXGroup;
+			children = (
+				4566D18F228CEFBF00A6528C /* SearchKeyEntity+CoreDataClass.h */,
+				4566D18C228CEFBE00A6528C /* SearchKeyEntity+CoreDataClass.m */,
+				4566D18E228CEFBE00A6528C /* SearchKeyEntity+CoreDataProperties.h */,
+				4566D18D228CEFBE00A6528C /* SearchKeyEntity+CoreDataProperties.m */,
+				4566D189228CEED800A6528C /* HNDemo.xcdatamodeld */,
+			);
+			path = HNEntity;
+			sourceTree = "<group>";
+		};
 		45C5CFC82244BAD7003F8CD2 = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +253,7 @@
 		45CA85F12246522A00D591CB /* HNModel */ = {
 			isa = PBXGroup;
 			children = (
+				4566D188228CEED800A6528C /* HNEntity */,
 				45CA863422588A9100D591CB /* HNDemoURL.h */,
 				45CA86192249CF0C00D591CB /* HNKeyCourse.h */,
 				45CA861A2249CF0C00D591CB /* HNKeyCourse.m */,
@@ -471,6 +492,8 @@
 				45CA86212249DCEF00D591CB /* NSDictionary+HN.m in Sources */,
 				4566D17B2288EF2800A6528C /* HNKeyList.m in Sources */,
 				45CA8607224716A500D591CB /* HNCallback.m in Sources */,
+				4566D190228CEFBF00A6528C /* SearchKeyEntity+CoreDataClass.m in Sources */,
+				4566D191228CEFBF00A6528C /* SearchKeyEntity+CoreDataProperties.m in Sources */,
 				4566D181228C384800A6528C /* HNDemoServerImp.m in Sources */,
 				45CA86BE225F642600D591CB /* Person.m in Sources */,
 				45CA861B2249CF0C00D591CB /* HNKeyCourse.m in Sources */,
@@ -479,6 +502,7 @@
 				45C5CFE42244BAD8003F8CD2 /* main.m in Sources */,
 				45CA86002246549100D591CB /* HNKeyCourseTableViewController.m in Sources */,
 				45CA86272250719A00D591CB /* UIImageView+HN.m in Sources */,
+				4566D18B228CEED800A6528C /* HNDemo.xcdatamodeld in Sources */,
 				45CA863D2258931300D591CB /* UIViewController+HN.m in Sources */,
 				45CA860B224719B200D591CB /* NSError+HN.m in Sources */,
 				45C5CFD62244BAD8003F8CD2 /* AppDelegate.m in Sources */,
@@ -771,6 +795,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4566D189228CEED800A6528C /* HNDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4566D18A228CEED800A6528C /* HNDemo.xcdatamodel */,
+			);
+			currentVersion = 4566D18A228CEED800A6528C /* HNDemo.xcdatamodel */;
+			path = HNDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 45C5CFC92244BAD7003F8CD2 /* Project object */;
 }

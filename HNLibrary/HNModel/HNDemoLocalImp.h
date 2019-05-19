@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HNCallback.h"
+#import "NSError+HN.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HNDemoLocalImp : NSObject
 
 + (instancetype)sharedImp;
+
+//保存搜索关键字
+- (void)saveCourseSearchKey:(NSString *)key callback:(HNResultCallback)callback;
 
 @end
 
