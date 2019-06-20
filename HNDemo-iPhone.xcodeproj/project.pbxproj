@@ -36,7 +36,6 @@
 		45CA86272250719A00D591CB /* UIImageView+HN.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA86262250719A00D591CB /* UIImageView+HN.m */; };
 		45CA863A2258917D00D591CB /* UIView+HN.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA86392258917D00D591CB /* UIView+HN.m */; };
 		45CA863D2258931300D591CB /* UIViewController+HN.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA863C2258931300D591CB /* UIViewController+HN.m */; };
-		45CA86BE225F642600D591CB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA86BD225F642600D591CB /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,8 +115,6 @@
 		45CA86392258917D00D591CB /* UIView+HN.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+HN.m"; sourceTree = "<group>"; };
 		45CA863B2258931300D591CB /* UIViewController+HN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HN.h"; sourceTree = "<group>"; };
 		45CA863C2258931300D591CB /* UIViewController+HN.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HN.m"; sourceTree = "<group>"; };
-		45CA86BC225F642600D591CB /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		45CA86BD225F642600D591CB /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		617DDAFE700E3A4E32659F14 /* Pods-HNDemo-iPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNDemo-iPhone.release.xcconfig"; path = "Target Support Files/Pods-HNDemo-iPhone/Pods-HNDemo-iPhone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -288,8 +285,6 @@
 			children = (
 				45CA86022246550200D591CB /* ViewController.h */,
 				45CA86032246550200D591CB /* ViewController.m */,
-				45CA86BC225F642600D591CB /* Person.h */,
-				45CA86BD225F642600D591CB /* Person.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -495,7 +490,6 @@
 				4566D190228CEFBF00A6528C /* SearchKeyEntity+CoreDataClass.m in Sources */,
 				4566D191228CEFBF00A6528C /* SearchKeyEntity+CoreDataProperties.m in Sources */,
 				4566D181228C384800A6528C /* HNDemoServerImp.m in Sources */,
-				45CA86BE225F642600D591CB /* Person.m in Sources */,
 				45CA861B2249CF0C00D591CB /* HNKeyCourse.m in Sources */,
 				45CA860E22471C6D00D591CB /* HNHttpRequestManager.m in Sources */,
 				4566D184228C394200A6528C /* HNDemoLocalImp.m in Sources */,
