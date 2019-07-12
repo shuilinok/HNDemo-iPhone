@@ -21,21 +21,32 @@
 		45C5CFE42244BAD8003F8CD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C5CFE32244BAD8003F8CD2 /* main.m */; };
 		45C5CFEE2244BAD8003F8CD2 /* HNDemo_iPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C5CFED2244BAD8003F8CD2 /* HNDemo_iPhoneTests.m */; };
 		45C5CFF92244BAD8003F8CD2 /* HNDemo_iPhoneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C5CFF82244BAD8003F8CD2 /* HNDemo_iPhoneUITests.m */; };
-		45CA85F52246525C00D591CB /* HNHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA85F42246525C00D591CB /* HNHttpRequest.m */; };
 		45CA85FB224653AC00D591CB /* HNKeyCourseListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA85FA224653AC00D591CB /* HNKeyCourseListViewController.m */; };
 		45CA85FD224653F500D591CB /* HNKeyCourseListBD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45CA85FC224653F500D591CB /* HNKeyCourseListBD.storyboard */; };
 		45CA86002246549100D591CB /* HNKeyCourseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA85FF2246549100D591CB /* HNKeyCourseTableViewController.m */; };
 		45CA86042246550200D591CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA86032246550200D591CB /* ViewController.m */; };
-		45CA8607224716A500D591CB /* HNCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA8606224716A500D591CB /* HNCallback.m */; };
-		45CA860B224719B200D591CB /* NSError+HN.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA860A224719B200D591CB /* NSError+HN.m */; };
-		45CA860E22471C6D00D591CB /* HNHttpRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA860D22471C6D00D591CB /* HNHttpRequestManager.m */; };
 		45CA861B2249CF0C00D591CB /* HNKeyCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA861A2249CF0C00D591CB /* HNKeyCourse.m */; };
 		45CA861E2249CF2B00D591CB /* HNKeyCourseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA861D2249CF2B00D591CB /* HNKeyCourseList.m */; };
-		45CA86212249DCEF00D591CB /* NSDictionary+HN.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA86202249DCEF00D591CB /* NSDictionary+HN.m */; };
 		45CA862422505E1000D591CB /* HNKeyCourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA862322505E1000D591CB /* HNKeyCourseCell.m */; };
-		45CA86272250719A00D591CB /* UIImageView+HN.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA86262250719A00D591CB /* UIImageView+HN.m */; };
-		45CA863A2258917D00D591CB /* UIView+HN.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA86392258917D00D591CB /* UIView+HN.m */; };
-		45CA863D2258931300D591CB /* UIViewController+HN.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA863C2258931300D591CB /* UIViewController+HN.m */; };
+		A18C10B722D7305B0047A044 /* HNHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C109722D7305B0047A044 /* HNHttpRequest.m */; };
+		A18C10B822D7305B0047A044 /* HNHttpRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C109A22D7305B0047A044 /* HNHttpRequestManager.m */; };
+		A18C10BF22D7305B0047A044 /* LXDBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10AA22D7305B0047A044 /* LXDBacktraceLogger.m */; };
+		A18C10C022D7305B0047A044 /* MainBlockLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10AD22D7305B0047A044 /* MainBlockLogger.m */; };
+		A18C10CD22D828F90047A044 /* UIView+HN.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10C222D828F80047A044 /* UIView+HN.m */; };
+		A18C10CE22D828F90047A044 /* UIViewController+HN.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10C522D828F80047A044 /* UIViewController+HN.m */; };
+		A18C10CF22D828F90047A044 /* NSDictionary+HN.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10C622D828F80047A044 /* NSDictionary+HN.m */; };
+		A18C10D022D828F90047A044 /* NSError+HN.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10C722D828F80047A044 /* NSError+HN.m */; };
+		A18C10D122D828F90047A044 /* HNCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10C822D828F80047A044 /* HNCallback.m */; };
+		A18C10D222D828F90047A044 /* UIImageView+HN.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10C922D828F90047A044 /* UIImageView+HN.m */; };
+		A18C10E522D829060047A044 /* UIResponder+EventHook.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10D322D829060047A044 /* UIResponder+EventHook.m */; };
+		A18C10E622D829060047A044 /* EventLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10D522D829060047A044 /* EventLogManager.m */; };
+		A18C10E722D829060047A044 /* UIGestureRecognizer+EventHook.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10D622D829060047A044 /* UIGestureRecognizer+EventHook.m */; };
+		A18C10E822D829060047A044 /* UIControl+EventHook.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10DB22D829060047A044 /* UIControl+EventHook.m */; };
+		A18C10E922D829060047A044 /* UISwitch+EventHook.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10DE22D829060047A044 /* UISwitch+EventHook.m */; };
+		A18C10EA22D829060047A044 /* UICollectionViewCell+EventHook.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10DF22D829060047A044 /* UICollectionViewCell+EventHook.m */; };
+		A18C10EB22D829060047A044 /* UITableViewCell+EventHook.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10E222D829060047A044 /* UITableViewCell+EventHook.m */; };
+		A18C10EC22D829060047A044 /* UITapGestureRecognizer+EventHook.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10E322D829060047A044 /* UITapGestureRecognizer+EventHook.m */; };
+		A18C10ED22D829060047A044 /* EventPathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10E422D829060047A044 /* EventPathHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,8 +94,6 @@
 		45C5CFF42244BAD8003F8CD2 /* HNDemo-iPhoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HNDemo-iPhoneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C5CFF82244BAD8003F8CD2 /* HNDemo_iPhoneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNDemo_iPhoneUITests.m; sourceTree = "<group>"; };
 		45C5CFFA2244BAD8003F8CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45CA85F32246525C00D591CB /* HNHttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNHttpRequest.h; sourceTree = "<group>"; };
-		45CA85F42246525C00D591CB /* HNHttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNHttpRequest.m; sourceTree = "<group>"; };
 		45CA85F9224653AC00D591CB /* HNKeyCourseListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNKeyCourseListViewController.h; sourceTree = "<group>"; };
 		45CA85FA224653AC00D591CB /* HNKeyCourseListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNKeyCourseListViewController.m; sourceTree = "<group>"; };
 		45CA85FC224653F500D591CB /* HNKeyCourseListBD.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HNKeyCourseListBD.storyboard; sourceTree = "<group>"; };
@@ -92,30 +101,54 @@
 		45CA85FF2246549100D591CB /* HNKeyCourseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNKeyCourseTableViewController.m; sourceTree = "<group>"; };
 		45CA86022246550200D591CB /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		45CA86032246550200D591CB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		45CA8605224716A500D591CB /* HNCallback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNCallback.h; sourceTree = "<group>"; };
-		45CA8606224716A500D591CB /* HNCallback.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNCallback.m; sourceTree = "<group>"; };
-		45CA8609224719B200D591CB /* NSError+HN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+HN.h"; sourceTree = "<group>"; };
-		45CA860A224719B200D591CB /* NSError+HN.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+HN.m"; sourceTree = "<group>"; };
-		45CA860C22471C6D00D591CB /* HNHttpRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNHttpRequestManager.h; sourceTree = "<group>"; };
-		45CA860D22471C6D00D591CB /* HNHttpRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNHttpRequestManager.m; sourceTree = "<group>"; };
 		45CA860F224722A600D591CB /* HNFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNFoundation.h; sourceTree = "<group>"; };
 		45CA86102247241700D591CB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		45CA86192249CF0C00D591CB /* HNKeyCourse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNKeyCourse.h; sourceTree = "<group>"; };
 		45CA861A2249CF0C00D591CB /* HNKeyCourse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNKeyCourse.m; sourceTree = "<group>"; };
 		45CA861C2249CF2B00D591CB /* HNKeyCourseList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNKeyCourseList.h; sourceTree = "<group>"; };
 		45CA861D2249CF2B00D591CB /* HNKeyCourseList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNKeyCourseList.m; sourceTree = "<group>"; };
-		45CA861F2249DCEF00D591CB /* NSDictionary+HN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HN.h"; sourceTree = "<group>"; };
-		45CA86202249DCEF00D591CB /* NSDictionary+HN.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HN.m"; sourceTree = "<group>"; };
 		45CA862222505E1000D591CB /* HNKeyCourseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNKeyCourseCell.h; sourceTree = "<group>"; };
 		45CA862322505E1000D591CB /* HNKeyCourseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNKeyCourseCell.m; sourceTree = "<group>"; };
-		45CA86252250719A00D591CB /* UIImageView+HN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HN.h"; sourceTree = "<group>"; };
-		45CA86262250719A00D591CB /* UIImageView+HN.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HN.m"; sourceTree = "<group>"; };
 		45CA863422588A9100D591CB /* HNDemoURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNDemoURL.h; sourceTree = "<group>"; };
-		45CA86382258917D00D591CB /* UIView+HN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+HN.h"; sourceTree = "<group>"; };
-		45CA86392258917D00D591CB /* UIView+HN.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+HN.m"; sourceTree = "<group>"; };
-		45CA863B2258931300D591CB /* UIViewController+HN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HN.h"; sourceTree = "<group>"; };
-		45CA863C2258931300D591CB /* UIViewController+HN.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HN.m"; sourceTree = "<group>"; };
 		617DDAFE700E3A4E32659F14 /* Pods-HNDemo-iPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNDemo-iPhone.release.xcconfig"; path = "Target Support Files/Pods-HNDemo-iPhone/Pods-HNDemo-iPhone.release.xcconfig"; sourceTree = "<group>"; };
+		A18C109722D7305B0047A044 /* HNHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNHttpRequest.m; sourceTree = "<group>"; };
+		A18C109822D7305B0047A044 /* HNHttpRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNHttpRequestManager.h; sourceTree = "<group>"; };
+		A18C109922D7305B0047A044 /* HNHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNHttpRequest.h; sourceTree = "<group>"; };
+		A18C109A22D7305B0047A044 /* HNHttpRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNHttpRequestManager.m; sourceTree = "<group>"; };
+		A18C10AA22D7305B0047A044 /* LXDBacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDBacktraceLogger.m; sourceTree = "<group>"; };
+		A18C10AB22D7305B0047A044 /* MainBlockLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainBlockLogger.h; sourceTree = "<group>"; };
+		A18C10AC22D7305B0047A044 /* LXDBacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDBacktraceLogger.h; sourceTree = "<group>"; };
+		A18C10AD22D7305B0047A044 /* MainBlockLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainBlockLogger.m; sourceTree = "<group>"; };
+		A18C10C122D828F80047A044 /* UIView+HN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HN.h"; sourceTree = "<group>"; };
+		A18C10C222D828F80047A044 /* UIView+HN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HN.m"; sourceTree = "<group>"; };
+		A18C10C322D828F80047A044 /* HNCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNCallback.h; sourceTree = "<group>"; };
+		A18C10C422D828F80047A044 /* NSError+HN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+HN.h"; sourceTree = "<group>"; };
+		A18C10C522D828F80047A044 /* UIViewController+HN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HN.m"; sourceTree = "<group>"; };
+		A18C10C622D828F80047A044 /* NSDictionary+HN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HN.m"; sourceTree = "<group>"; };
+		A18C10C722D828F80047A044 /* NSError+HN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+HN.m"; sourceTree = "<group>"; };
+		A18C10C822D828F80047A044 /* HNCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNCallback.m; sourceTree = "<group>"; };
+		A18C10C922D828F90047A044 /* UIImageView+HN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HN.m"; sourceTree = "<group>"; };
+		A18C10CA22D828F90047A044 /* UIViewController+HN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HN.h"; sourceTree = "<group>"; };
+		A18C10CB22D828F90047A044 /* UIImageView+HN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HN.h"; sourceTree = "<group>"; };
+		A18C10CC22D828F90047A044 /* NSDictionary+HN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HN.h"; sourceTree = "<group>"; };
+		A18C10D322D829060047A044 /* UIResponder+EventHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+EventHook.m"; sourceTree = "<group>"; };
+		A18C10D422D829060047A044 /* EventPathHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventPathHelper.h; sourceTree = "<group>"; };
+		A18C10D522D829060047A044 /* EventLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventLogManager.m; sourceTree = "<group>"; };
+		A18C10D622D829060047A044 /* UIGestureRecognizer+EventHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+EventHook.m"; sourceTree = "<group>"; };
+		A18C10D722D829060047A044 /* UICollectionViewCell+EventHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+EventHook.h"; sourceTree = "<group>"; };
+		A18C10D822D829060047A044 /* EventLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventLogManager.h; sourceTree = "<group>"; };
+		A18C10D922D829060047A044 /* UIControl+EventHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+EventHook.h"; sourceTree = "<group>"; };
+		A18C10DA22D829060047A044 /* UITapGestureRecognizer+EventHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITapGestureRecognizer+EventHook.h"; sourceTree = "<group>"; };
+		A18C10DB22D829060047A044 /* UIControl+EventHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+EventHook.m"; sourceTree = "<group>"; };
+		A18C10DC22D829060047A044 /* UITableViewCell+EventHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+EventHook.h"; sourceTree = "<group>"; };
+		A18C10DD22D829060047A044 /* UIResponder+EventHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+EventHook.h"; sourceTree = "<group>"; };
+		A18C10DE22D829060047A044 /* UISwitch+EventHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+EventHook.m"; sourceTree = "<group>"; };
+		A18C10DF22D829060047A044 /* UICollectionViewCell+EventHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+EventHook.m"; sourceTree = "<group>"; };
+		A18C10E022D829060047A044 /* UIGestureRecognizer+EventHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+EventHook.h"; sourceTree = "<group>"; };
+		A18C10E122D829060047A044 /* UISwitch+EventHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwitch+EventHook.h"; sourceTree = "<group>"; };
+		A18C10E222D829060047A044 /* UITableViewCell+EventHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+EventHook.m"; sourceTree = "<group>"; };
+		A18C10E322D829060047A044 /* UITapGestureRecognizer+EventHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITapGestureRecognizer+EventHook.m"; sourceTree = "<group>"; };
+		A18C10E422D829060047A044 /* EventPathHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventPathHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,23 +259,12 @@
 		45CA85F02246522A00D591CB /* HNFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				A18C109B22D7305B0047A044 /* Common */,
+				A18C10A822D7305B0047A044 /* Database */,
+				A18C108322D7305B0047A044 /* EventLog */,
+				A18C109622D7305B0047A044 /* Network */,
+				A18C10A922D7305B0047A044 /* UEPlus */,
 				45CA860F224722A600D591CB /* HNFoundation.h */,
-				45CA85F32246525C00D591CB /* HNHttpRequest.h */,
-				45CA85F42246525C00D591CB /* HNHttpRequest.m */,
-				45CA860C22471C6D00D591CB /* HNHttpRequestManager.h */,
-				45CA860D22471C6D00D591CB /* HNHttpRequestManager.m */,
-				45CA8605224716A500D591CB /* HNCallback.h */,
-				45CA8606224716A500D591CB /* HNCallback.m */,
-				45CA8609224719B200D591CB /* NSError+HN.h */,
-				45CA860A224719B200D591CB /* NSError+HN.m */,
-				45CA861F2249DCEF00D591CB /* NSDictionary+HN.h */,
-				45CA86202249DCEF00D591CB /* NSDictionary+HN.m */,
-				45CA86252250719A00D591CB /* UIImageView+HN.h */,
-				45CA86262250719A00D591CB /* UIImageView+HN.m */,
-				45CA86382258917D00D591CB /* UIView+HN.h */,
-				45CA86392258917D00D591CB /* UIView+HN.m */,
-				45CA863B2258931300D591CB /* UIViewController+HN.h */,
-				45CA863C2258931300D591CB /* UIViewController+HN.m */,
 			);
 			path = HNFoundation;
 			sourceTree = "<group>";
@@ -304,6 +326,79 @@
 				617DDAFE700E3A4E32659F14 /* Pods-HNDemo-iPhone.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A18C108322D7305B0047A044 /* EventLog */ = {
+			isa = PBXGroup;
+			children = (
+				A18C10D822D829060047A044 /* EventLogManager.h */,
+				A18C10D522D829060047A044 /* EventLogManager.m */,
+				A18C10D422D829060047A044 /* EventPathHelper.h */,
+				A18C10E422D829060047A044 /* EventPathHelper.m */,
+				A18C10D722D829060047A044 /* UICollectionViewCell+EventHook.h */,
+				A18C10DF22D829060047A044 /* UICollectionViewCell+EventHook.m */,
+				A18C10D922D829060047A044 /* UIControl+EventHook.h */,
+				A18C10DB22D829060047A044 /* UIControl+EventHook.m */,
+				A18C10E022D829060047A044 /* UIGestureRecognizer+EventHook.h */,
+				A18C10D622D829060047A044 /* UIGestureRecognizer+EventHook.m */,
+				A18C10DD22D829060047A044 /* UIResponder+EventHook.h */,
+				A18C10D322D829060047A044 /* UIResponder+EventHook.m */,
+				A18C10E122D829060047A044 /* UISwitch+EventHook.h */,
+				A18C10DE22D829060047A044 /* UISwitch+EventHook.m */,
+				A18C10DC22D829060047A044 /* UITableViewCell+EventHook.h */,
+				A18C10E222D829060047A044 /* UITableViewCell+EventHook.m */,
+				A18C10DA22D829060047A044 /* UITapGestureRecognizer+EventHook.h */,
+				A18C10E322D829060047A044 /* UITapGestureRecognizer+EventHook.m */,
+			);
+			path = EventLog;
+			sourceTree = "<group>";
+		};
+		A18C109622D7305B0047A044 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A18C109922D7305B0047A044 /* HNHttpRequest.h */,
+				A18C109722D7305B0047A044 /* HNHttpRequest.m */,
+				A18C109822D7305B0047A044 /* HNHttpRequestManager.h */,
+				A18C109A22D7305B0047A044 /* HNHttpRequestManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A18C109B22D7305B0047A044 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A18C10C322D828F80047A044 /* HNCallback.h */,
+				A18C10C822D828F80047A044 /* HNCallback.m */,
+				A18C10CC22D828F90047A044 /* NSDictionary+HN.h */,
+				A18C10C622D828F80047A044 /* NSDictionary+HN.m */,
+				A18C10C422D828F80047A044 /* NSError+HN.h */,
+				A18C10C722D828F80047A044 /* NSError+HN.m */,
+				A18C10CB22D828F90047A044 /* UIImageView+HN.h */,
+				A18C10C922D828F90047A044 /* UIImageView+HN.m */,
+				A18C10C122D828F80047A044 /* UIView+HN.h */,
+				A18C10C222D828F80047A044 /* UIView+HN.m */,
+				A18C10CA22D828F90047A044 /* UIViewController+HN.h */,
+				A18C10C522D828F80047A044 /* UIViewController+HN.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A18C10A822D7305B0047A044 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		A18C10A922D7305B0047A044 /* UEPlus */ = {
+			isa = PBXGroup;
+			children = (
+				A18C10AC22D7305B0047A044 /* LXDBacktraceLogger.h */,
+				A18C10AA22D7305B0047A044 /* LXDBacktraceLogger.m */,
+				A18C10AB22D7305B0047A044 /* MainBlockLogger.h */,
+				A18C10AD22D7305B0047A044 /* MainBlockLogger.m */,
+			);
+			path = UEPlus;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,28 +576,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A18C10E522D829060047A044 /* UIResponder+EventHook.m in Sources */,
+				A18C10E822D829060047A044 /* UIControl+EventHook.m in Sources */,
+				A18C10B722D7305B0047A044 /* HNHttpRequest.m in Sources */,
+				A18C10D022D828F90047A044 /* NSError+HN.m in Sources */,
+				A18C10CD22D828F90047A044 /* UIView+HN.m in Sources */,
 				45CA86042246550200D591CB /* ViewController.m in Sources */,
-				45CA85F52246525C00D591CB /* HNHttpRequest.m in Sources */,
+				A18C10EB22D829060047A044 /* UITableViewCell+EventHook.m in Sources */,
+				A18C10EA22D829060047A044 /* UICollectionViewCell+EventHook.m in Sources */,
 				45CA862422505E1000D591CB /* HNKeyCourseCell.m in Sources */,
-				45CA86212249DCEF00D591CB /* NSDictionary+HN.m in Sources */,
+				A18C10EC22D829060047A044 /* UITapGestureRecognizer+EventHook.m in Sources */,
+				A18C10E722D829060047A044 /* UIGestureRecognizer+EventHook.m in Sources */,
+				A18C10D122D828F90047A044 /* HNCallback.m in Sources */,
 				4566D17B2288EF2800A6528C /* HNKeyList.m in Sources */,
-				45CA8607224716A500D591CB /* HNCallback.m in Sources */,
 				4566D190228CEFBF00A6528C /* SearchKeyEntity+CoreDataClass.m in Sources */,
 				4566D191228CEFBF00A6528C /* SearchKeyEntity+CoreDataProperties.m in Sources */,
 				4566D181228C384800A6528C /* HNDemoServerImp.m in Sources */,
+				A18C10B822D7305B0047A044 /* HNHttpRequestManager.m in Sources */,
 				45CA861B2249CF0C00D591CB /* HNKeyCourse.m in Sources */,
-				45CA860E22471C6D00D591CB /* HNHttpRequestManager.m in Sources */,
 				4566D184228C394200A6528C /* HNDemoLocalImp.m in Sources */,
+				A18C10D222D828F90047A044 /* UIImageView+HN.m in Sources */,
 				45C5CFE42244BAD8003F8CD2 /* main.m in Sources */,
 				45CA86002246549100D591CB /* HNKeyCourseTableViewController.m in Sources */,
-				45CA86272250719A00D591CB /* UIImageView+HN.m in Sources */,
+				A18C10BF22D7305B0047A044 /* LXDBacktraceLogger.m in Sources */,
 				4566D18B228CEED800A6528C /* HNDemo.xcdatamodeld in Sources */,
-				45CA863D2258931300D591CB /* UIViewController+HN.m in Sources */,
-				45CA860B224719B200D591CB /* NSError+HN.m in Sources */,
 				45C5CFD62244BAD8003F8CD2 /* AppDelegate.m in Sources */,
+				A18C10CE22D828F90047A044 /* UIViewController+HN.m in Sources */,
+				A18C10E922D829060047A044 /* UISwitch+EventHook.m in Sources */,
+				A18C10E622D829060047A044 /* EventLogManager.m in Sources */,
+				A18C10CF22D828F90047A044 /* NSDictionary+HN.m in Sources */,
 				45CA85FB224653AC00D591CB /* HNKeyCourseListViewController.m in Sources */,
-				45CA863A2258917D00D591CB /* UIView+HN.m in Sources */,
+				A18C10ED22D829060047A044 /* EventPathHelper.m in Sources */,
 				45CA861E2249CF2B00D591CB /* HNKeyCourseList.m in Sources */,
+				A18C10C022D7305B0047A044 /* MainBlockLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
