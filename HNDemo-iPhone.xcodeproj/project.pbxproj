@@ -28,6 +28,7 @@
 		45CA861B2249CF0C00D591CB /* HNKeyCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA861A2249CF0C00D591CB /* HNKeyCourse.m */; };
 		45CA861E2249CF2B00D591CB /* HNKeyCourseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA861D2249CF2B00D591CB /* HNKeyCourseList.m */; };
 		45CA862422505E1000D591CB /* HNKeyCourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA862322505E1000D591CB /* HNKeyCourseCell.m */; };
+		A1083F8022DF489B00C734D3 /* MainLoopMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = A1083F7F22DF489B00C734D3 /* MainLoopMonitor.m */; };
 		A18C10B722D7305B0047A044 /* HNHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C109722D7305B0047A044 /* HNHttpRequest.m */; };
 		A18C10B822D7305B0047A044 /* HNHttpRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C109A22D7305B0047A044 /* HNHttpRequestManager.m */; };
 		A18C10BF22D7305B0047A044 /* LXDBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10AA22D7305B0047A044 /* LXDBacktraceLogger.m */; };
@@ -64,7 +65,26 @@
 			remoteGlobalIDString = 45C5CFD02244BAD8003F8CD2;
 			remoteInfo = "HNDemo-iPhone";
 		};
+		A18C113522D853D60047A044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45C5CFC92244BAD7003F8CD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45C5CFD02244BAD8003F8CD2;
+			remoteInfo = "HNDemo-iPhone";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A18C113A22D853E50047A044 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		122F0D869925DE11DCB7C447 /* Pods-HNDemo-iPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNDemo-iPhone.debug.xcconfig"; path = "Target Support Files/Pods-HNDemo-iPhone/Pods-HNDemo-iPhone.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +131,8 @@
 		45CA862322505E1000D591CB /* HNKeyCourseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNKeyCourseCell.m; sourceTree = "<group>"; };
 		45CA863422588A9100D591CB /* HNDemoURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNDemoURL.h; sourceTree = "<group>"; };
 		617DDAFE700E3A4E32659F14 /* Pods-HNDemo-iPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNDemo-iPhone.release.xcconfig"; path = "Target Support Files/Pods-HNDemo-iPhone/Pods-HNDemo-iPhone.release.xcconfig"; sourceTree = "<group>"; };
+		A1083F7E22DF489B00C734D3 /* MainLoopMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainLoopMonitor.h; sourceTree = "<group>"; };
+		A1083F7F22DF489B00C734D3 /* MainLoopMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainLoopMonitor.m; sourceTree = "<group>"; };
 		A18C109722D7305B0047A044 /* HNHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNHttpRequest.m; sourceTree = "<group>"; };
 		A18C109822D7305B0047A044 /* HNHttpRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNHttpRequestManager.h; sourceTree = "<group>"; };
 		A18C109922D7305B0047A044 /* HNHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNHttpRequest.h; sourceTree = "<group>"; };
@@ -149,6 +171,7 @@
 		A18C10E222D829060047A044 /* UITableViewCell+EventHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+EventHook.m"; sourceTree = "<group>"; };
 		A18C10E322D829060047A044 /* UITapGestureRecognizer+EventHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITapGestureRecognizer+EventHook.m"; sourceTree = "<group>"; };
 		A18C10E422D829060047A044 /* EventPathHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventPathHelper.m; sourceTree = "<group>"; };
+		A18C113022D853D60047A044 /* Monkey-HNDemo-iPhoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Monkey-HNDemo-iPhoneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +191,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		45C5CFF12244BAD8003F8CD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18C112D22D853D60047A044 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,6 +238,7 @@
 				45C5CFD12244BAD8003F8CD2 /* HNDemo-iPhone.app */,
 				45C5CFE92244BAD8003F8CD2 /* HNDemo-iPhoneTests.xctest */,
 				45C5CFF42244BAD8003F8CD2 /* HNDemo-iPhoneUITests.xctest */,
+				A18C113022D853D60047A044 /* Monkey-HNDemo-iPhoneUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -397,6 +428,8 @@
 				A18C10AA22D7305B0047A044 /* LXDBacktraceLogger.m */,
 				A18C10AB22D7305B0047A044 /* MainBlockLogger.h */,
 				A18C10AD22D7305B0047A044 /* MainBlockLogger.m */,
+				A1083F7E22DF489B00C734D3 /* MainLoopMonitor.h */,
+				A1083F7F22DF489B00C734D3 /* MainLoopMonitor.m */,
 			);
 			path = UEPlus;
 			sourceTree = "<group>";
@@ -459,12 +492,32 @@
 			productReference = 45C5CFF42244BAD8003F8CD2 /* HNDemo-iPhoneUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A18C112F22D853D60047A044 /* Monkey-HNDemo-iPhoneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A18C113722D853D60047A044 /* Build configuration list for PBXNativeTarget "Monkey-HNDemo-iPhoneUITests" */;
+			buildPhases = (
+				A18C112C22D853D60047A044 /* Sources */,
+				A18C112D22D853D60047A044 /* Frameworks */,
+				A18C112E22D853D60047A044 /* Resources */,
+				A18C113A22D853E50047A044 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A18C113622D853D60047A044 /* PBXTargetDependency */,
+			);
+			name = "Monkey-HNDemo-iPhoneUITests";
+			productName = "Monkey-HNDemo-iPhoneUITests";
+			productReference = A18C113022D853D60047A044 /* Monkey-HNDemo-iPhoneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		45C5CFC92244BAD7003F8CD2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = shuilin;
 				TargetAttributes = {
@@ -479,6 +532,11 @@
 					};
 					45C5CFF32244BAD8003F8CD2 = {
 						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 45C5CFD02244BAD8003F8CD2;
+					};
+					A18C112F22D853D60047A044 = {
+						CreatedOnToolsVersion = 10.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 45C5CFD02244BAD8003F8CD2;
 					};
@@ -500,6 +558,7 @@
 				45C5CFD02244BAD8003F8CD2 /* HNDemo-iPhone */,
 				45C5CFE82244BAD8003F8CD2 /* HNDemo-iPhoneTests */,
 				45C5CFF32244BAD8003F8CD2 /* HNDemo-iPhoneUITests */,
+				A18C112F22D853D60047A044 /* Monkey-HNDemo-iPhoneUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -524,6 +583,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		45C5CFF22244BAD8003F8CD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18C112E22D853D60047A044 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -605,6 +671,7 @@
 				A18C10E922D829060047A044 /* UISwitch+EventHook.m in Sources */,
 				A18C10E622D829060047A044 /* EventLogManager.m in Sources */,
 				A18C10CF22D828F90047A044 /* NSDictionary+HN.m in Sources */,
+				A1083F8022DF489B00C734D3 /* MainLoopMonitor.m in Sources */,
 				45CA85FB224653AC00D591CB /* HNKeyCourseListViewController.m in Sources */,
 				A18C10ED22D829060047A044 /* EventPathHelper.m in Sources */,
 				45CA861E2249CF2B00D591CB /* HNKeyCourseList.m in Sources */,
@@ -628,6 +695,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A18C112C22D853D60047A044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -640,6 +714,11 @@
 			isa = PBXTargetDependency;
 			target = 45C5CFD02244BAD8003F8CD2 /* HNDemo-iPhone */;
 			targetProxy = 45C5CFF52244BAD8003F8CD2 /* PBXContainerItemProxy */;
+		};
+		A18C113622D853D60047A044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45C5CFD02244BAD8003F8CD2 /* HNDemo-iPhone */;
+			targetProxy = A18C113522D853D60047A044 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -771,6 +850,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 122F0D869925DE11DCB7C447 /* Pods-HNDemo-iPhone.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Q9XGLF4A8;
@@ -788,6 +868,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 617DDAFE700E3A4E32659F14 /* Pods-HNDemo-iPhone.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Q9XGLF4A8;
@@ -806,6 +887,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Q9XGLF4A8;
 				INFOPLIST_FILE = "HNDemo-iPhoneTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "shuilin.HNDemo-iPhoneTests";
@@ -820,6 +902,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Q9XGLF4A8;
 				INFOPLIST_FILE = "HNDemo-iPhoneTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "shuilin.HNDemo-iPhoneTests";
@@ -833,6 +916,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Q9XGLF4A8;
 				INFOPLIST_FILE = "HNDemo-iPhoneUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "shuilin.HNDemo-iPhoneUITests";
@@ -846,10 +930,55 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Q9XGLF4A8;
 				INFOPLIST_FILE = "HNDemo-iPhoneUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "shuilin.HNDemo-iPhoneUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HNDemo-iPhone";
+			};
+			name = Release;
+		};
+		A18C113822D853D60047A044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Q9XGLF4A8;
+				INFOPLIST_FILE = "Monkey-HNDemo-iPhoneUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EnjoyLoop.Demo.Monkey-HNDemo-iPhoneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HNDemo-iPhone";
+			};
+			name = Debug;
+		};
+		A18C113922D853D60047A044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Q9XGLF4A8;
+				INFOPLIST_FILE = "Monkey-HNDemo-iPhoneUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EnjoyLoop.Demo.Monkey-HNDemo-iPhoneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "HNDemo-iPhone";
 			};
@@ -890,6 +1019,15 @@
 			buildConfigurations = (
 				45C5D0042244BAD8003F8CD2 /* Debug */,
 				45C5D0052244BAD8003F8CD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A18C113722D853D60047A044 /* Build configuration list for PBXNativeTarget "Monkey-HNDemo-iPhoneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A18C113822D853D60047A044 /* Debug */,
+				A18C113922D853D60047A044 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
