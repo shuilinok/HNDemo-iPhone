@@ -53,11 +53,11 @@ static void HNRunloopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopAc
     
     switch (activity) {
         case kCFRunLoopBeforeWaiting: {
-            NSLog(@"空闲...");
+            //NSLog(@"空闲...");
         }
             break;
         case kCFRunLoopAfterWaiting: {
-            NSLog(@"忙碌...");
+            //NSLog(@"忙碌...");
         }
             break;
         default: break;

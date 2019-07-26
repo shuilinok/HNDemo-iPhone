@@ -53,7 +53,7 @@
         //计算控件路径
         NSString *path = [EventPathHelper getResonderPath:view];
 
-        NSLog(@"位置：%@，类型：%ld，处理者：%@", path, (long)touch.phase, NSStringFromClass([self class]));
+        //NSLog(@"位置：%@，类型：%ld，处理者：%@", path, (long)touch.phase, NSStringFromClass([self class]));
     }
 
     //调用原始的方法

@@ -415,13 +415,13 @@ NSString * lxd_logBacktraceEntry(const int entryNum, const uintptr_t address, co
         sname = saddrBuffer;
         offset = address - (uintptr_t)dlInfo->dli_fbase;
     }
-    //return [NSString stringWithFormat: @"%-30s 0x%08" PRIxPTR " %s + %lu\n", fname, (uintptr_t)address, sname, offset];
+    return [NSString stringWithFormat: @"%-30s 0x%08" PRIxPTR " %s + %lu\n", fname, (uintptr_t)address, sname, offset];
     
-    //只关心包含有[]的
-    NSString *temp = [NSString stringWithFormat:@"%s",sname];
-    if([temp containsString:@"["]) {
-        return [NSString stringWithFormat: @"%-30s 0x%08" PRIxPTR " %s + %lu\n", fname, (uintptr_t)address, sname, offset];
-    }
+//    //只关心包含有[]的
+//    NSString *temp = [NSString stringWithFormat:@"%s",sname];
+//    if([temp containsString:@"["]) {
+//        return [NSString stringWithFormat: @"%-30s 0x%08" PRIxPTR " %s + %lu\n", fname, (uintptr_t)address, sname, offset];
+//    }
     
     return nil;
 }

@@ -9,10 +9,14 @@
 #import "ViewController.h"
 #import "HNKeyCourseListViewController.h"
 #import <objc/runtime.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImageWebPCoder/SDWebImageWebPCoder.h>
 
 @interface ViewController ()
 
 @property (strong, nonatomic) IBOutlet UITextField *keyField;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -56,6 +60,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    SDImageWebPCoder *webPCoder = [SDImageWebPCoder sharedCoder];
+    [[SDImageCodersManager sharedManager] addCoder:webPCoder];
+    
+    
+    // WebP image encoding
+//    UIImage *image;
+//    NSData *webpData = [[SDImageWebPCoder sharedCoder] encodedDataWithImage:image format:SDImageFormatWebP options:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -87,7 +99,58 @@
 
 - (IBAction)searchClicked:(id)sender
 {
-    [NSThread sleepForTimeInterval:2];
+//    [self.imageView sd_setImageWithURL:[NSURL URLWithString:@"https://img-g.taojiji.com/gl/public/201907/a8/cd/aa/5e/a8cdaa5ed51dcf6823ef388c1cd7442c.jpg?x-oss-process=image/format,webp"]];
+//
+//    return;
+    
+    
+    static int i = 11;   //0 2,   3 5,  6 8,  9 11
+    
+    NSString *host = @"http://192.168.2.30";
+    
+    //200 * 200
+    if(i == 0) {
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/cat.jpg",host]]];
+    }
+    if(i == 1) {
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/cat.png",host]]];
+    }
+    if(i == 2) {
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/cat.webp",host]]];
+    }
+    
+    //500 * 313
+    if(i == 3) {
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/horse.jpg",host]]];
+    }
+    if(i == 4) {
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/horse.png",host]]];
+    }
+    if(i == 5) {
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/horse.webp",host]]];
+    }
+    
+    //1080 * 683
+    if(i == 6) {
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/panda.jpg",host]]];
+    }
+    if(i == 7) {
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/panda.png",host]]];
+    }
+    if(i == 8) {
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/panda.webp",host]]];
+    }
+    
+    //2034 * 1526
+    if(i == 9) {
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/dolphin.jpg",host]]];
+    }
+    if(i == 10) {
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/dolphin.png",host]]];
+    }
+    if(i == 11) {
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/dolphin.webp",host]]];
+    }
     
     NSString *key = self.keyField.text;
     if(key.length == 0)
