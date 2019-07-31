@@ -51,8 +51,9 @@
                 
                 //根据后缀名判断文件格式是否为图片
                 NSString *extenstion = [path pathExtension];
-                BOOL isImage = extenstion && ([extenstion compare:@"png" options:NSCaseInsensitiveSearch] == NSOrderedSame || [extenstion compare:@"jpg" options:NSCaseInsensitiveSearch] == NSOrderedSame);
-                if(!isImage) {
+                NSString *name = [path lastPathComponent];
+                BOOL allow = extenstion && ([extenstion compare:@"png" options:NSCaseInsensitiveSearch] == NSOrderedSame || [extenstion compare:@"jpg" options:NSCaseInsensitiveSearch] == NSOrderedSame) && [name containsString:@"@3x"];
+                if(!allow) {
                     continue;
                 }
                 

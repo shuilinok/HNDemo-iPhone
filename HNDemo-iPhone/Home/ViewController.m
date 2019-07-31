@@ -18,6 +18,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
+@property (assign, nonatomic) NSUInteger count;
+
 @end
 
 @implementation ViewController
@@ -60,14 +62,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.count = 0;
     
     SDImageWebPCoder *webPCoder = [SDImageWebPCoder sharedCoder];
     [[SDImageCodersManager sharedManager] addCoder:webPCoder];
     
-    //webPCoder decodedImageWithData:<#(nullable NSData *)#> options:<#(nullable SDImageCoderOptions *)#>
-    // WebP image encoding
-//    UIImage *image;
-//    NSData *webpData = [[SDImageWebPCoder sharedCoder] encodedDataWithImage:image format:SDImageFormatWebP options:nil];
+    //PNG
+//    NSString *dstPath = [[[HNFileManager sharedInstance] documentPath] stringByAppendingPathComponent:@"/local_images/Images.xcassets"];
+//
+//    NSArray *paths = [[HNFileManager sharedInstance] allFilePath:dstPath];
+//
+//    if(paths) {
+//        NSMutableArray *objects = [[NSMutableArray alloc] initWithArray:[[paths reverseObjectEnumerator] allObjects]];
+//        [self showPngImages:objects callback:^{
+//            NSLog(@"完成 : %ld",self.count);
+//        }];
+//    }
+    
+    //WebP
+//    NSString *dstPath = [[[HNFileManager sharedInstance] documentPath] stringByAppendingPathComponent:@"/local_images/Webp"];
+//    NSArray *paths = [[HNFileManager sharedInstance] allFilePath:dstPath];
+//
+//    if(paths) {
+//        NSMutableArray *objects = [[NSMutableArray alloc] initWithArray:[[paths reverseObjectEnumerator] allObjects]];
+//        [self showWebpImages:objects callback:^{
+//            NSLog(@"完成 : %ld",self.count);
+//        }];
+//    }
+    
+    
+    //WebP缩放
+//    NSString *dstPath = [[[HNFileManager sharedInstance] documentPath] stringByAppendingPathComponent:@"/local_images/Webp"];
+//    NSArray *paths = [[HNFileManager sharedInstance] allFilePath:dstPath];
+//
+//    if(paths) {
+//        NSMutableArray *objects = [[NSMutableArray alloc] initWithArray:[[paths reverseObjectEnumerator] allObjects]];
+//        [self showScaleWebpImages:objects callback:^{
+//            NSLog(@"完成 : %ld",self.count);
+//        }];
+//    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -111,17 +144,128 @@
                                 
 }
 
+
+- (void)showPngImages:(NSMutableArray *)paths callback:(HNCallback)callback {
+    
+    NSString *path = [paths lastObject];
+    
+    if(path) {
+        
+        if([path containsString:@"@3x"]) {
+            
+            NSData *data = [NSData dataWithContentsOfFile:path];
+            UIImage *image = [UIImage imageWithData:data];
+            self.imageView.image = image;
+            self.count++;
+            //下一个
+            [paths removeObject:path];
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(60 * NSEC_PER_MSEC)), dispatch_get_main_queue(), ^{
+                [self showPngImages:paths callback:^{
+                    callback();
+                }];
+            });
+        } else {    //跳过
+            
+            [paths removeObject:path];
+            [self showPngImages:paths callback:^{
+                callback();
+            }];
+        }
+        
+    } else {
+        callback();
+    }
+    
+}
+
+- (void)showWebpImages:(NSMutableArray *)paths callback:(HNCallback)callback {
+    
+    NSString *path = [paths lastObject];
+    
+    if(path) {
+        SDImageWebPCoder *webPCoder = [SDImageWebPCoder sharedCoder];
+        //解码
+        NSData *data = [NSData dataWithContentsOfFile:path];
+        UIImage *image = [webPCoder decodedImageWithData:data options:nil];
+        self.imageView.image = image;
+        self.count++;
+        //下一个
+        [paths removeObject:path];
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(60 * NSEC_PER_MSEC)), dispatch_get_main_queue(), ^{
+            [self showWebpImages:paths callback:^{
+                callback();
+            }];
+        });
+        
+        
+    } else {
+        callback();
+    }
+    
+}
+
+- (void)showScaleWebpImages:(NSMutableArray *)paths callback:(HNCallback)callback {
+    
+    NSString *path = [paths lastObject];
+    
+    if(path) {
+        SDImageWebPCoder *webPCoder = [SDImageWebPCoder sharedCoder];
+        //解码
+        NSData *data = [NSData dataWithContentsOfFile:path];
+        UIImage *image = [webPCoder decodedImageWithData:data options:nil];
+        
+//        CGFloat fixelW = CGImageGetWidth(image.CGImage);
+//
+//        CGFloat fixelH = CGImageGetHeight(image.CGImage);
+//
+//        NSLog(@"w : %lf * h : %lf",fixelW,fixelH);
+        
+        //缩放
+        image = [self scaleImage:image toScale:0.6667];
+    
+//             fixelW = CGImageGetWidth(image.CGImage);
+//
+//             fixelH = CGImageGetHeight(image.CGImage);
+//
+//            NSLog(@"w : %lf * h : %lf",fixelW,fixelH);
+        
+        self.imageView.image = image;
+        self.count++;
+        //下一个
+        [paths removeObject:path];
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(60 * NSEC_PER_MSEC)), dispatch_get_main_queue(), ^{
+            [self showScaleWebpImages:paths callback:^{
+                callback();
+            }];
+        });
+        
+        
+    } else {
+        callback();
+    }
+    
+}
+
+
+
 - (IBAction)searchClicked:(id)sender
 {
-//    NSString *dstPath = [[HNFileManager sharedInstance] documentPath];
-//    NSLog(@"document path : %@",dstPath);
+    NSString *documentPath = [[HNFileManager sharedInstance] documentPath];
+    NSLog(@"document path : %@",documentPath);
     
-    HNImageCoder *fileEncoder = [[HNImageCoder alloc] init];
-    NSString *srcPath = [[[HNFileManager sharedInstance] documentPath] stringByAppendingPathComponent:@"/local_images/Images.xcassets"];
-    NSString *dstPath = [[[HNFileManager sharedInstance] documentPath] stringByAppendingPathComponent:@"/local_images/Webp"];
-    [fileEncoder encodeDir:srcPath toWebP:dstPath callback:^(NSError *error) {
+//    HNImageCoder *fileEncoder = [[HNImageCoder alloc] init];
+//    NSString *srcPath = [[[HNFileManager sharedInstance] documentPath] stringByAppendingPathComponent:@"/local_images/Images.xcassets"];
+//    NSString *dstPath = [[[HNFileManager sharedInstance] documentPath] stringByAppendingPathComponent:@"/local_images/Webp"];
+//    [fileEncoder encodeDir:srcPath toWebP:dstPath callback:^(NSError *error) {
+//
+//    }];
+    
 
-    }];
+    
+    
     
 //    CFAbsoluteTime time1 = CFAbsoluteTimeGetCurrent();
 //
@@ -186,7 +330,7 @@
 //    CFAbsoluteTime time2 = CFAbsoluteTimeGetCurrent();
 //    CFAbsoluteTime interval = time2 - time1;
 //    NSLog(@"本地 webp 图片加载时间 : %lf", interval);
-    return;
+  
     
 
 //    [self.imageView sd_setImageWithURL:[NSURL URLWithString:@"https://img-g.taojiji.com/gl/public/201907/a8/cd/aa/5e/a8cdaa5ed51dcf6823ef388c1cd7442c.jpg?x-oss-process=image/format,webp"]];
@@ -239,7 +383,7 @@
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/dolphin.png",host]]];
     }
     if(i == 11) {
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/dolphin.webp",host]]];
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/icon_fx.webp",host]]];
     }
     
     NSString *key = self.keyField.text;

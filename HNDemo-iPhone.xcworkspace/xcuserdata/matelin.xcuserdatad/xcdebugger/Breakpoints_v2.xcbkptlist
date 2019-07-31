@@ -858,11 +858,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HNDemo-iPhone/Home/ViewController.m"
-            timestampString = "586237635.132585"
+            timestampString = "586257235.022054"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "312"
+            endingLineNumber = "312"
             landmarkName = "-searchClicked:"
             landmarkType = "7">
          </BreakpointContent>
@@ -874,11 +874,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HNDemo-iPhone/Home/ViewController.m"
-            timestampString = "586237635.132643"
+            timestampString = "586257235.022382"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
+            startingLineNumber = "310"
+            endingLineNumber = "310"
             landmarkName = "-searchClicked:"
             landmarkType = "7">
          </BreakpointContent>
@@ -890,11 +890,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HNDemo-iPhone/Home/ViewController.m"
-            timestampString = "586237635.132689"
+            timestampString = "586257235.022598"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
+            startingLineNumber = "309"
+            endingLineNumber = "309"
             landmarkName = "-searchClicked:"
             landmarkType = "7">
          </BreakpointContent>
@@ -906,11 +906,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HNLibrary/HNFoundation/ImageCoder/HNImageCoder.m"
-            timestampString = "586237635.132733"
+            timestampString = "586248420.821312"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "-encodeDir:toWebP:callback:"
             landmarkType = "7">
          </BreakpointContent>
@@ -922,7 +922,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HNLibrary/HNFoundation/FileManager/HNFileManager.m"
-            timestampString = "586237635.133056"
+            timestampString = "586248420.821372"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
@@ -938,7 +938,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HNLibrary/HNFoundation/FileManager/HNFileManager.m"
-            timestampString = "586237635.133106"
+            timestampString = "586248420.82142"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
@@ -954,7 +954,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HNLibrary/HNFoundation/FileManager/HNFileManager.m"
-            timestampString = "586237635.13315"
+            timestampString = "586248420.821466"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
@@ -970,7 +970,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HNLibrary/HNFoundation/FileManager/HNFileManager.m"
-            timestampString = "586237635.133191"
+            timestampString = "586248420.821509"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
@@ -986,7 +986,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HNLibrary/HNFoundation/FileManager/HNFileManager.m"
-            timestampString = "586237635.13323"
+            timestampString = "586248420.821553"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
@@ -1002,11 +1002,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HNLibrary/HNFoundation/ImageCoder/HNImageCoder.m"
-            timestampString = "586237635.13327"
+            timestampString = "586248420.821596"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "-encodeDir:toWebP:callback:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1018,11 +1018,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HNLibrary/HNFoundation/ImageCoder/HNImageCoder.m"
-            timestampString = "586237635.1335011"
+            timestampString = "586248420.8216439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "-encodeDir:toWebP:callback:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1034,11 +1034,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HNLibrary/HNFoundation/ImageCoder/HNImageCoder.m"
-            timestampString = "586237635.133726"
+            timestampString = "586248420.82169"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "-encodeDir:toWebP:callback:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1050,7 +1050,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HNLibrary/HNFoundation/Common/NSString+HN.m"
-            timestampString = "586237635.133945"
+            timestampString = "586248420.821735"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
@@ -1066,7 +1066,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HNLibrary/HNFoundation/Common/NSString+HN.m"
-            timestampString = "586237635.133989"
+            timestampString = "586248420.8217731"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -1082,7 +1082,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HNLibrary/HNFoundation/Common/NSString+HN.m"
-            timestampString = "586237635.134028"
+            timestampString = "586248420.821812"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -1098,12 +1098,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HNLibrary/HNFoundation/Common/NSString+HN.m"
-            timestampString = "586237635.134065"
+            timestampString = "586248420.8218499"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
             endingLineNumber = "23"
             landmarkName = "-hn_remainString:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HNDemo-iPhone/Home/ViewController.m"
+            timestampString = "586257235.022925"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "-showWebpImages:callback:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HNDemo-iPhone/Home/ViewController.m"
+            timestampString = "586257235.0231349"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "-showWebpImages:callback:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
