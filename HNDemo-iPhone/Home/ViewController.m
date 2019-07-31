@@ -64,7 +64,7 @@
     SDImageWebPCoder *webPCoder = [SDImageWebPCoder sharedCoder];
     [[SDImageCodersManager sharedManager] addCoder:webPCoder];
     
-    
+    //webPCoder decodedImageWithData:<#(nullable NSData *)#> options:<#(nullable SDImageCoderOptions *)#>
     // WebP image encoding
 //    UIImage *image;
 //    NSData *webpData = [[SDImageWebPCoder sharedCoder] encodedDataWithImage:image format:SDImageFormatWebP options:nil];
@@ -97,8 +97,98 @@
     NSString *userId = [cls valueForKeyPath:@"shareInstance.userId"];
 }
 
+- (UIImage *)scaleImage:(UIImage *)image toScale:(float)scaleSize
+{
+    
+    UIGraphicsBeginImageContext(CGSizeMake(image.size.width * scaleSize, image.size.height * scaleSize));
+                                
+                                [image drawInRect:CGRectMake(0, 0, image.size.width * scaleSize, image.size.height * scaleSize)];
+                                
+                                UIImage *scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+                                UIGraphicsEndImageContext();
+                                
+   return scaledImage;
+                                
+}
+
 - (IBAction)searchClicked:(id)sender
 {
+//    NSString *dstPath = [[HNFileManager sharedInstance] documentPath];
+//    NSLog(@"document path : %@",dstPath);
+    
+    HNImageCoder *fileEncoder = [[HNImageCoder alloc] init];
+    NSString *srcPath = [[[HNFileManager sharedInstance] documentPath] stringByAppendingPathComponent:@"/local_images/Images.xcassets"];
+    NSString *dstPath = [[[HNFileManager sharedInstance] documentPath] stringByAppendingPathComponent:@"/local_images/Webp"];
+    [fileEncoder encodeDir:srcPath toWebP:dstPath callback:^(NSError *error) {
+
+    }];
+    
+//    CFAbsoluteTime time1 = CFAbsoluteTimeGetCurrent();
+//
+//    SDImageWebPCoder *webPCoder = [SDImageWebPCoder sharedCoder];
+//    NSString *url = [[NSBundle mainBundle] pathForResource:@"test1" ofType:@"webp"];
+//    NSData *data = [NSData dataWithContentsOfFile:url];
+//    //UIImage *image = [UIImage imageWithData:data];
+//
+//
+//    //SDWebImageContext *context = @{SDWebImageContextImageScaleFactor:@(0.3)};
+//    //SDImageCoderOptions *options = @{SDImageCoderDecodeScaleFactor : @(0.2)};
+//
+//    //解码
+//    UIImage *image = [webPCoder decodedImageWithData:data options:nil];
+//
+//    //缩放
+//    image = [self scaleImage:image toScale:0.3];
+//
+//    self.imageView.image = image;
+//
+//        CGFloat fixelW = CGImageGetWidth(image.CGImage);
+//
+//        CGFloat fixelH = CGImageGetHeight(image.CGImage);
+//
+//        NSLog(@"w : %lf * h : %lf",fixelW,fixelH);
+//
+//    return;
+//
+    /* //编码
+    SDImageWebPCoder *webPCoder = [SDImageWebPCoder sharedCoder];
+    SDImageCoderOptions *options = @{SDImageCoderEncodeCompressionQuality : @(0.3)
+                                     };
+
+    NSString *url = [[NSBundle mainBundle] pathForResource:@"test1" ofType:@"png"];
+    NSData *data = [NSData dataWithContentsOfFile:url];
+    UIImage *image = [UIImage imageWithData:data];
+    NSData *webpData = [webPCoder encodedDataWithImage:image format:SDImageFormatWebP options:options];
+
+    NSString *directory = NSHomeDirectory();
+    //directory = [directory stringByAppendingString:@"/"];
+    NSString *filePath = [directory stringByAppendingPathComponent:@"/i_mages/webp/test1.webp"];
+    //NSURL *url = [NSURL URLWithString:filePath];
+    NSString *dirPath = [filePath stringByDeletingLastPathComponent];
+    [[HNFileManager sharedInstance] generateDirectory:dirPath];
+    [webpData writeToFile:filePath atomically:YES];
+
+    NSLog(@"file path : %@", filePath);
+*/
+//    //验证尺寸
+//    options = nil;//@{SDImageCoderDecodeScaleFactor : @(0.2)};
+//
+//    UIImage *webpImage = [webPCoder decodedImageWithData:data options:options];
+//    CGFloat fixelW = CGImageGetWidth(webpImage.CGImage);
+//
+//    CGFloat fixelH = CGImageGetHeight(webpImage.CGImage);
+//
+//    NSLog(@"w : %lf * h : %lf",fixelW,fixelH);
+//
+//    UIImage *image = [UIImage imageNamed:@"test1.png"];
+//    self.imageView.image = image;
+//
+//    CFAbsoluteTime time2 = CFAbsoluteTimeGetCurrent();
+//    CFAbsoluteTime interval = time2 - time1;
+//    NSLog(@"本地 webp 图片加载时间 : %lf", interval);
+    return;
+    
+
 //    [self.imageView sd_setImageWithURL:[NSURL URLWithString:@"https://img-g.taojiji.com/gl/public/201907/a8/cd/aa/5e/a8cdaa5ed51dcf6823ef388c1cd7442c.jpg?x-oss-process=image/format,webp"]];
 //
 //    return;

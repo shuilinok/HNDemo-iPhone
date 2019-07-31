@@ -16,8 +16,11 @@
 #import "UIImageView+HN.h"
 #import "UIView+HN.h"
 #import "UIViewController+HN.h"
+#import "NSString+HN.h"
 
 #import "HNHttpRequest.h"
 #import "HNHttpRequestManager.h"
+#import "HNFileManager.h"
+#import "HNImageCoder.h"
 
 #endif /* HNFoundation_h */
