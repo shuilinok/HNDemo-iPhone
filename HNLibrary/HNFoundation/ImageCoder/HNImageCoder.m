@@ -63,7 +63,10 @@
                 if(data) {
                     UIImage *image = [UIImage imageWithData:data];
                     if(image) {
-                        NSData *webpData = [webPCoder encodedDataWithImage:image format:SDImageFormatWebP options:nil];
+                        
+                        SDImageCoderOptions *options = @{SDImageCoderEncodeCompressionQuality : @(0.25)
+                                                         };
+                        NSData *webpData = [webPCoder encodedDataWithImage:image format:SDImageFormatWebP options:options];
                         
                         //生成目标路径
                         NSString *dstPath = [dstDir stringByAppendingPathComponent:path];

@@ -29,11 +29,11 @@
 		45CA861E2249CF2B00D591CB /* HNKeyCourseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA861D2249CF2B00D591CB /* HNKeyCourseList.m */; };
 		45CA862422505E1000D591CB /* HNKeyCourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CA862322505E1000D591CB /* HNKeyCourseCell.m */; };
 		A1083F8022DF489B00C734D3 /* MainLoopMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = A1083F7F22DF489B00C734D3 /* MainLoopMonitor.m */; };
-		A10F981822EEFF7A000C55EC /* test1.webp in Resources */ = {isa = PBXBuildFile; fileRef = A10F981722EEFF7A000C55EC /* test1.webp */; };
-		A10F981A22EF0807000C55EC /* test1.png in Resources */ = {isa = PBXBuildFile; fileRef = A10F981922EF0807000C55EC /* test1.png */; };
 		A1114AF922EFFD2B00796E07 /* HNImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A1114AF822EFFD2B00796E07 /* HNImageCoder.m */; };
 		A1114AFD22EFFF5300796E07 /* HNFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1114AFC22EFFF5300796E07 /* HNFileManager.m */; };
+		A115C0FF22F27D7A00CC37B1 /* UIImage+HN.m in Sources */ = {isa = PBXBuildFile; fileRef = A115C0FE22F27D7A00CC37B1 /* UIImage+HN.m */; };
 		A119F51C22F12F5B0052D567 /* NSString+HN.m in Sources */ = {isa = PBXBuildFile; fileRef = A119F51B22F12F5B0052D567 /* NSString+HN.m */; };
+		A177A7D922F2D96E00797BA0 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A177A7D822F2D96E00797BA0 /* cat.jpg */; };
 		A18C10B722D7305B0047A044 /* HNHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C109722D7305B0047A044 /* HNHttpRequest.m */; };
 		A18C10B822D7305B0047A044 /* HNHttpRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C109A22D7305B0047A044 /* HNHttpRequestManager.m */; };
 		A18C10BF22D7305B0047A044 /* LXDBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A18C10AA22D7305B0047A044 /* LXDBacktraceLogger.m */; };
@@ -138,14 +138,15 @@
 		617DDAFE700E3A4E32659F14 /* Pods-HNDemo-iPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNDemo-iPhone.release.xcconfig"; path = "Target Support Files/Pods-HNDemo-iPhone/Pods-HNDemo-iPhone.release.xcconfig"; sourceTree = "<group>"; };
 		A1083F7E22DF489B00C734D3 /* MainLoopMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainLoopMonitor.h; sourceTree = "<group>"; };
 		A1083F7F22DF489B00C734D3 /* MainLoopMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainLoopMonitor.m; sourceTree = "<group>"; };
-		A10F981722EEFF7A000C55EC /* test1.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = test1.webp; sourceTree = "<group>"; };
-		A10F981922EF0807000C55EC /* test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test1.png; sourceTree = "<group>"; };
 		A1114AF722EFFD2B00796E07 /* HNImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNImageCoder.h; sourceTree = "<group>"; };
 		A1114AF822EFFD2B00796E07 /* HNImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNImageCoder.m; sourceTree = "<group>"; };
 		A1114AFB22EFFF5300796E07 /* HNFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNFileManager.h; sourceTree = "<group>"; };
 		A1114AFC22EFFF5300796E07 /* HNFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HNFileManager.m; sourceTree = "<group>"; };
+		A115C0FD22F27D7A00CC37B1 /* UIImage+HN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+HN.h"; sourceTree = "<group>"; };
+		A115C0FE22F27D7A00CC37B1 /* UIImage+HN.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HN.m"; sourceTree = "<group>"; };
 		A119F51A22F12F5B0052D567 /* NSString+HN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HN.h"; sourceTree = "<group>"; };
 		A119F51B22F12F5B0052D567 /* NSString+HN.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HN.m"; sourceTree = "<group>"; };
+		A177A7D822F2D96E00797BA0 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 		A18C109722D7305B0047A044 /* HNHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNHttpRequest.m; sourceTree = "<group>"; };
 		A18C109822D7305B0047A044 /* HNHttpRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNHttpRequestManager.h; sourceTree = "<group>"; };
 		A18C109922D7305B0047A044 /* HNHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNHttpRequest.h; sourceTree = "<group>"; };
@@ -378,8 +379,7 @@
 		A10F981222EEFBF6000C55EC /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				A10F981922EF0807000C55EC /* test1.png */,
-				A10F981722EEFF7A000C55EC /* test1.webp */,
+				A177A7D822F2D96E00797BA0 /* cat.jpg */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -455,6 +455,8 @@
 				A18C10C522D828F80047A044 /* UIViewController+HN.m */,
 				A119F51A22F12F5B0052D567 /* NSString+HN.h */,
 				A119F51B22F12F5B0052D567 /* NSString+HN.m */,
+				A115C0FD22F27D7A00CC37B1 /* UIImage+HN.h */,
+				A115C0FE22F27D7A00CC37B1 /* UIImage+HN.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -490,7 +492,6 @@
 				45C5CFCD2244BAD8003F8CD2 /* Sources */,
 				45C5CFCE2244BAD8003F8CD2 /* Frameworks */,
 				45C5CFCF2244BAD8003F8CD2 /* Resources */,
-				DD7EE8274B073AFD39FCDF2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -613,12 +614,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A177A7D922F2D96E00797BA0 /* cat.jpg in Resources */,
 				45C5CFE12244BAD8003F8CD2 /* LaunchScreen.storyboard in Resources */,
 				45CA85FD224653F500D591CB /* HNKeyCourseListBD.storyboard in Resources */,
 				45C5CFDE2244BAD8003F8CD2 /* Assets.xcassets in Resources */,
 				45C5CFDC2244BAD8003F8CD2 /* Main.storyboard in Resources */,
-				A10F981822EEFF7A000C55EC /* test1.webp in Resources */,
-				A10F981A22EF0807000C55EC /* test1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,24 +664,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DD7EE8274B073AFD39FCDF2A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HNDemo-iPhone/Pods-HNDemo-iPhone-resources.sh",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HNDemo-iPhone/Pods-HNDemo-iPhone-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -718,6 +700,7 @@
 				A1114AF922EFFD2B00796E07 /* HNImageCoder.m in Sources */,
 				45C5CFD62244BAD8003F8CD2 /* AppDelegate.m in Sources */,
 				A18C10CE22D828F90047A044 /* UIViewController+HN.m in Sources */,
+				A115C0FF22F27D7A00CC37B1 /* UIImage+HN.m in Sources */,
 				A18C10E922D829060047A044 /* UISwitch+EventHook.m in Sources */,
 				A18C10E622D829060047A044 /* EventLogManager.m in Sources */,
 				A18C10CF22D828F90047A044 /* NSDictionary+HN.m in Sources */,

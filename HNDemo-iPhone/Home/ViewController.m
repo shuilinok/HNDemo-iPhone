@@ -11,6 +11,7 @@
 #import <objc/runtime.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <SDWebImageWebPCoder/SDWebImageWebPCoder.h>
+#import <SDWebImage/SDImageCoderHelper.h>
 
 @interface ViewController ()
 
@@ -19,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @property (assign, nonatomic) NSUInteger count;
+
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end
 
@@ -67,6 +70,17 @@
     SDImageWebPCoder *webPCoder = [SDImageWebPCoder sharedCoder];
     [[SDImageCodersManager sharedManager] addCoder:webPCoder];
     
+    UIImage *image = [UIImage imageNamed:@"abc"];
+    //NSString *url = [[NSBundle mainBundle] pathForResource:@"bird@2x" ofType:@"png"];
+    //NSData *data = [NSData dataWithContentsOfFile:url];
+    //UIImage *image = [UIImage imageWithContentsOfFile:url];
+    NSLog(@"scale : %f screen : %f",image.scale,[UIScreen mainScreen].scale);
+    
+    self.imageView.image = image;
+    
+   
+    
+    
     //PNG
 //    NSString *dstPath = [[[HNFileManager sharedInstance] documentPath] stringByAppendingPathComponent:@"/local_images/Images.xcassets"];
 //
@@ -102,6 +116,20 @@
 //        }];
 //    }
 }
+
+/*
+ name = @"my_2unpaid_icon@3x";
+ //UIImage *image = [self tj_UIImage_imageNamed:name];
+ 
+ 
+ 
+ float   fixelW = CGImageGetWidth(image.CGImage);
+ float   fixelH = CGImageGetHeight(image.CGImage);
+ 
+ NSLog(@"w : %lf * h : %lf",fixelW,fixelH);
+ 
+ return image;
+ */
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -256,6 +284,12 @@
     NSString *documentPath = [[HNFileManager sharedInstance] documentPath];
     NSLog(@"document path : %@",documentPath);
     
+    UIImage *image = [UIImage imageNamed:@"test1"];
+    
+    [self.button setBackgroundImage:image forState:UIControlStateNormal];
+    
+    self.imageView.image = image;
+    
 //    HNImageCoder *fileEncoder = [[HNImageCoder alloc] init];
 //    NSString *srcPath = [[[HNFileManager sharedInstance] documentPath] stringByAppendingPathComponent:@"/local_images/Images.xcassets"];
 //    NSString *dstPath = [[[HNFileManager sharedInstance] documentPath] stringByAppendingPathComponent:@"/local_images/Webp"];
@@ -335,12 +369,12 @@
 
 //    [self.imageView sd_setImageWithURL:[NSURL URLWithString:@"https://img-g.taojiji.com/gl/public/201907/a8/cd/aa/5e/a8cdaa5ed51dcf6823ef388c1cd7442c.jpg?x-oss-process=image/format,webp"]];
 //
-//    return;
+    return;
     
     
     static int i = 11;   //0 2,   3 5,  6 8,  9 11
     
-    NSString *host = @"http://192.168.2.30";
+    NSString *host = @"http://localhost";
     
     //200 * 200
     if(i == 0) {
@@ -383,7 +417,7 @@
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/dolphin.png",host]]];
     }
     if(i == 11) {
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/icon_fx.webp",host]]];
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/image/buyer@3x.webp",host]]];
     }
     
     NSString *key = self.keyField.text;

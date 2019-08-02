@@ -22,5 +22,6 @@
 #import "HNHttpRequestManager.h"
 #import "HNFileManager.h"
 #import "HNImageCoder.h"
+#import "UIImage+HN.h"
 
 #endif /* HNFoundation_h */
