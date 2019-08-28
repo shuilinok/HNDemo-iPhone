@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "MainBlockLogger.h"
+#import <Heap.h>
 
 @interface AppDelegate ()
 
@@ -32,6 +33,7 @@
     
     self.window.rootViewController = navigationViewController;
     
+    [Heap setAppId:@"123"];
     
     return YES;
 }
